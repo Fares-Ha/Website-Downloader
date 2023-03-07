@@ -1,0 +1,111 @@
+.control_nav{
+-fx-background-color: #272f44;
+}
+.control_nav #closeBtn{
+-fx-background-color: transparent;
+ -fx-cursor: hand;
+-fx-graphic: url('https://icons.iconarchive.com/icons/custom-icon-design/flatastic-1/16/delete-icon.png');
+
+}
+.control_nav #minimizeBtn{
+-fx-background-color: transparent;
+ -fx-cursor: hand;
+ -fx-graphic: url('https://img.icons8.com/color/25/000000/more.png');
+
+}
+.main_section{
+-fx-padding: 50px 50px;
+-fx-background-color: #091a2b;
+
+}
+.main_section #textField,#location_label{
+-fx-border-insets: 30px;
+-fx-focus-color: transparent;
+}
+.main_section #location_label{
+ -fx-border-insets: 5px;
+-fx-border-color: #00a3d9;
+}
+
+.main_section #startBtn,#choose_location_btn{
+-fx-padding: 10px 30px;
+ -fx-background-insets:5px;
+ -fx-border-insets: 5px;
+  -fx-background-color: #091a2b;
+  -fx-text-fill: #00a3d9;
+ -fx-border-color: #00a3d9;
+  -fx-border-radius: 50px;
+   -fx-cursor: hand;
+}
+.nav_bar{
+-fx-background-color: #272f44;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: #00a3d9;
+
+}
+.nav_item{
+     -fx-background-color:#272f44;
+     -fx-border-width: 0 0 0 0;
+     -fx-text-fill: #00a3d9;
+     -fx-border-color: #00a3d9;
+     -fx-cursor: hand;
+
+}
+#homeBtn{
+-fx-graphic: url('https://icons.iconarchive.com/icons/double-j-design/super-mono-3d/32/home-icon.png');
+}
+#tableBtn{
+-fx-graphic: url('https://icons.iconarchive.com/icons/double-j-design/super-mono-3d/32/applications-icon.png');
+}
+#settingsBtn{
+-fx-graphic: url('https://icons.iconarchive.com/icons/double-j-design/super-mono-3d/32/preference-icon.png');
+}
+#infoBtn{
+-fx-graphic: url('https://icons.iconarchive.com/icons/double-j-design/super-mono-3d/32/button-round-info-icon.png');
+}
+
+
+.table_view{
+-fx-border-color: #272f44;
+-fx-border-width: 4px
+}
+
+#progress_bar{
+-fx-accent:blue;
+}
+#progress_bar1{
+-fx-accent:green;
+}
+
+.options_container{
+-fx-background-color: #091a2b;
+}
+.options_item{
+-fx-background-color: transparent;
+-fx-padding: 20px;
+}
+
+
+
+.check-box:selected .mark {
+-fx-background-color: white;
+}
+
+.checkbox_item::selected .box{
+-fx-background-color: #FFFFFF;
+}
+.checkbox_item:selected .box{
+-fx-background-color: #3CB371;
+}
+
+
+#pause_resume_btn{
+-fx-padding: 5px 15px;
+ -fx-background-insets:5px;
+ -fx-border-insets: 5px;
+  -fx-background-color: #228B22;
+  -fx-text-fill: #ffffff;
+ -fx-border-color: #228B22;
+  -fx-border-radius: 50px;
+   -fx-cursor: hand;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox onMousePressed="#getStagePosition" onMouseDragged="#setStagePosition" onMouseReleased="#resetOpacity" fx:id="upperBar" alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="800.0" spacing="2" styleClass="control_nav" BorderPane.alignment="TOP_RIGHT"
+fx:controller="controllers.UpperToolBarController" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button fx:id="minimizeBtn" onAction="#minimizeWindows" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0"  textAlignment="CENTER" />
+        <Button fx:id="closeBtn"  onAction="#closeWindows" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0"  textAlignment="CENTER" />
+    </children>
+</HBox>

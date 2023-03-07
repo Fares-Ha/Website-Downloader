@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="70.0" style="-fx-border-insets: 3px;" styleClass="nav_bar"
+      stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+      BorderPane.alignment="CENTER" fx:controller="controllers.NavBarController" >
+    <children>
+        <Button fx:id="homeBtn" mnemonicParsing="false" onAction="#home" prefHeight="60.0" prefWidth="150.0" style="" styleClass="nav_item" />
+        <Button fx:id="tableBtn" mnemonicParsing="false" onAction="#table" prefHeight="60.0" prefWidth="150.0" style="" styleClass="nav_item" />
+        <Button fx:id="settingsBtn" mnemonicParsing="false" onAction="#settings" prefHeight="60.0" prefWidth="150.0" style="" styleClass="nav_item" />
+        <Button fx:id="infoBtn" mnemonicParsing="false" onAction="#info" prefHeight="60.0" prefWidth="150.0" style="" styleClass="nav_item" />
+    </children>
+</VBox>

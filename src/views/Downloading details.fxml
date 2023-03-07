@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="600.0" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DownloadingDetails">
+<top>
+<HBox alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="800.0" spacing="2" styleClass="control_nav" BorderPane.alignment="TOP_RIGHT">
+    <children>
+        <Button fx:id="minimizeBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" textAlignment="CENTER" />
+        <Button fx:id="closeBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" textAlignment="CENTER" />
+
+    </children>
+</HBox>
+</top>
+   <center>
+      <VBox prefHeight="107.0" prefWidth="600.0" style="-fx-padding: 10px;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                       <Label fx:id="website_field" layoutX="12.0" layoutY="14.0" prefHeight="18.0" prefWidth="569.0" text="Website : " />
+                   </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                      <Label fx:id="status_field" layoutX="12.0" layoutY="44.0" prefHeight="18.0" prefWidth="454.0" text="Status : " />
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                      <Label fx:id="downloaded_field" layoutX="12.0" layoutY="101.0" prefHeight="18.0" prefWidth="338.0" text="Downloaded : " />
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                      <Label fx:id="down_percent_field" layoutX="12.0" layoutY="130.0" prefHeight="18.0" prefWidth="471.0" text="Downloaded percent : " />
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                      <Label fx:id="data_rate_field" layoutX="12.0" layoutY="163.0" prefHeight="18.0" prefWidth="485.0" text="Data rate :" />
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                      <Label fx:id="size_field" layoutX="12.0" layoutY="74.0" prefHeight="18.0" prefWidth="334.0" text="Size : " />
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <VBox alignment="CENTER" prefHeight="91.0" prefWidth="600.0" style="-fx-padding: 10px;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="17.0" prefWidth="78.0" text="Downloading" />
+            <ProgressBar prefHeight="10.0" prefWidth="500.0" progress="0.0" styleClass="download_progress" />
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="74.0" text="Converrting" />
+            <ProgressBar layoutX="10.0" layoutY="27.0" prefHeight="10.0" prefWidth="500.0" styleClass="convert_progress">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ProgressBar>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </bottom>
+ </BorderPane>

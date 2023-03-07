@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Settings_controller">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="options_container" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="530.0" styleClass="options_item">
+               <children>
+                  <CheckBox mnemonicParsing="false" selected="true" styleClass="checkbox_item" text="Full Website" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </HBox>
+             <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="200.0" styleClass="options_item">
+                 <children>
+                     <CheckBox mnemonicParsing="false" selected="true" styleClass="checkbox_item" text="Open folder after download complete" textFill="WHITE">
+                         <font>
+                             <Font name="Arial Bold" size="16.0" />
+                         </font>
+                     </CheckBox>
+                 </children>
+             </HBox>
+             <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="200.0" styleClass="options_item">
+                 <children>
+                     <CheckBox mnemonicParsing="false" selected="true" styleClass="checkbox_item" text="Voice notification after download" textFill="WHITE">
+                         <font>
+                             <Font name="Arial Bold" size="16.0" />
+                         </font>
+                     </CheckBox>
+                 </children>
+             </HBox>
+
+            <HBox layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0" />
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </center>
+    <left>
+        <fx:include source="NavBar.fxml" fx:id="nav_bar"/>
+    </left>
+
+    <top>
+        <fx:include source="UpperToolBar.fxml" fx:id="upper_toolbar"/>
+    </top>
+
+</BorderPane>

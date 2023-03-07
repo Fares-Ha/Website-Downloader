@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="328.0" prefWidth="600.0" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Downloading_controller">
+    <top>
+        <HBox fx:id="upperBar" alignment="CENTER_RIGHT" onMouseDragged="#setStagePosition" onMousePressed="#getStagePosition" onMouseReleased="#resetOpacity" prefHeight="28.0" prefWidth="800.0" spacing="2" styleClass="control_nav" BorderPane.alignment="TOP_RIGHT">
+            <children>
+                <Button fx:id="minimizeBtn" alignment="CENTER" mnemonicParsing="false" onAction="#minimizeWindows" prefHeight="25.0" prefWidth="35.0" textAlignment="CENTER" />
+                <Button fx:id="closeBtn" alignment="CENTER" mnemonicParsing="false" onAction="#closeWindows" prefHeight="25.0" prefWidth="35.0" textAlignment="CENTER" />
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <VBox prefHeight="107.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab styleClass="tab" text="Details">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="127.0" prefWidth="600.0">
+                                    <children>
+                                        <Label fx:id="website_field" layoutX="12.0" layoutY="14.0" prefHeight="18.0" prefWidth="200.0" text="Website : " />
+                                        <Label fx:id="status_field" layoutX="363.0" layoutY="14.0" prefHeight="18.0" prefWidth="200.0" text="Status : " />
+                                        <Label fx:id="downloaded_field" layoutX="363.0" layoutY="40.0" prefHeight="18.0" prefWidth="200.0" text="Downloaded : " />
+                                        <Label fx:id="down_percent_field" layoutX="12.0" layoutY="65.0" prefHeight="18.0" prefWidth="200.0" text="Downloaded percent : " />
+                                        <Label fx:id="data_rate_field" layoutX="363.0" layoutY="65.0" prefHeight="18.0" prefWidth="200.0" text="Data rate :" />
+                                        <Label fx:id="size_field" layoutX="12.0" layoutY="40.0" prefHeight="18.0" prefWidth="200.0" text="Size : " />
+                                        <Label fx:id="elapsed_time_field" layoutX="12.0" layoutY="92.0" prefWidth="200.0" text="Elapsed time : " />
+                                        <Label fx:id="estimated_time_field" layoutX="363.0" layoutY="92.0" prefWidth="200.0" text="Estimated time : " />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab styleClass="tab" text="Speed limit">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <CheckBox fx:id="checkbox" layoutX="23.0" layoutY="24.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="150.0" text="Enable speed limiter" />
+                                        <TextField fx:id="limit_text_field" layoutX="14.0" layoutY="60.0" prefHeight="26.0" prefWidth="38.0" />
+                                        <Label layoutX="63.0" layoutY="65.0" prefHeight="18.0" prefWidth="23.0" text="Kb" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+        </VBox>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="141.0" prefWidth="600.0" spacing="5" style="-fx-padding: 10px;" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="17.0" prefWidth="78.0" text="Downloading" />
+                <ProgressBar fx:id="progress_bar" prefHeight="12.0" prefWidth="500.0" styleClass="download_progress" />
+                <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="74.0" text="Converrting" />
+                <ProgressBar fx:id="progress_bar1" layoutX="10.0" layoutY="27.0" prefHeight="12.0" prefWidth="500.0" styleClass="convert_progress">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </ProgressBar>
+                <Button fx:id="pause_resume_btn" mnemonicParsing="false" onAction="#pause_resume_btn_event" text="pause" />
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </VBox>
+    </bottom>
+</BorderPane>
